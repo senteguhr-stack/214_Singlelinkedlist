@@ -18,4 +18,14 @@ class LinkedList
 
 public:
     LinkedList()
- 
+    {
+        START = NULL;
+    }
+
+    void addNode()
+    {
+        int nim;
+        cout << "\nMasukkan NIM Mahasiswa: ";
+        cin >> nim;
+
+  
