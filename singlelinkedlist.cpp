@@ -98,4 +98,23 @@ public:
         return true;
     }
 
-   
+    void traverse()
+    {
+        if (listEmpty())
+        {
+            cout << "\nList Kosong\n";
+            return;
+        }
+        cout << "\nData di dalam list adalah: \n";
+        Node *current = START;
+
+        while (current != NULL)
+        {
+            cout << current->noMhs << endl;
+            current = current->next;
+        }
+        cout << endl;
+    }
+};
+
+int main()
